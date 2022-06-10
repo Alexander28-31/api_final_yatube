@@ -1,42 +1,41 @@
-# api_final
-Cоздать и активировать окружающую среду:
+# api_final  <img src ="https://img.shields.io/badge/django%20rest-ff1709?style=for-the-badge&logo=django&logoColor=white " />
 
-python -m venv env
-source env/bin/activate
+API для проекта Yatube. Домашняя работа YandexPracticum по теме API.
 
-Установить зависимость от файла requirements.txt:
+## Как запустить проект <img src = "https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />
 
-python -m pip install --upgrade pip
-pip install -r requirements.txt
+python -m venv env 
 
-Выполнить выборку:
+source env/bin/activate 
 
-python3 manage.py migrate
+#### Установить зависимость от файла requirements.txt: 
 
-Запустить проект:
+python -m pip install --upgrade pip 
 
-python3 manage.py runserver
+pip install -r requirements.txt 
 
-Примеры. Некоторые примеры файлов к API.
+#### Выполнить выборку: 
 
-Получение публикаций
+python manage.py migrate 
 
-http://127.0.0.1:8000/api/v1/posts/
+## Примеры. Некоторые примеры файлов к API. <img src ="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white"/>
 
-Создание публикации
+#### Получение публикаций 
 
-http://127.0.0.1:8000/api/v1/posts/
+GET/api/v1/posts/ 
 
-Получение комментариев
+#### Создание публикации 
 
-http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/
+POST/api/v1/posts/ 
 
-Добавление комментария
+#### Получение комментариев 
 
-http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/
+GET/api/v1/posts/{post_id}/comments/ 
 
-Получение списка доступных сообществ.
+#### Добавление комментария 
 
-http://127.0.0.1:8000/api/v1/groups/
+POST/api/v1/posts/{post_id}/comments/ 
 
+#### Получение списка доступных сообществ. 
 
+GET/api/v1/groups/

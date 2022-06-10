@@ -1,13 +1,13 @@
 from rest_framework import filters, viewsets
 from rest_framework.generics import get_object_or_404
 from rest_framework.pagination import LimitOffsetPagination
-from rest_framework.permissions import IsAuthenticated, AllowAny
+from rest_framework.permissions import AllowAny, IsAuthenticated
 
 from posts.models import Group, Post, User
-from .viewset import CreateListViewSet
 from .permissions import OwnerOrReadOnly
 from .serializers import (CommentSerializer, FollowSerializer, GroupSerializer,
                           PostSerializer)
+from .viewset import CreateListViewSet
 
 
 class GroupViewSet(viewsets.ReadOnlyModelViewSet):
